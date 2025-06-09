@@ -1,10 +1,11 @@
 <div>
 
-  <h1>🧠 Medical Image Classification Flask App</h1>
+  <h1>Marrow-Find</h1>
 
   <p>This is a web-based Flask application for classifying medical images into categories such as <strong>Benign</strong>, <strong>Pre</strong>, <strong>Pro</strong>, and <strong>Early</strong> using a trained deep learning model. It includes user authentication, prediction history tracking, and downloadable PDF reports.</p>
 
   <p>GitHub Repository: <a href="https://github.com/gunavardhanlomada/Marrow-Find" target="_blank">Marrow-Find</a></p>
+  <code>https://github.com/gunavardhanlomada/Marrow-Find</code>
 
   <h2>📋 Dataset</h2>
   <p>This project uses the <strong>Blood Cells Cancer (ALL) 4‑class</strong> dataset from Kaggle, which contains images for Acute Lymphoblastic Leukemia classification:</p>
