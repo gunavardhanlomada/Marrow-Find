@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Prediction Result{% endblock %}
+
+{% block content %}
+    <h2>Prediction Result</h2>
+
+    <div class="result-container">
+        <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+        <h3>Predicted Class: <span class="prediction">{{ prediction }}</span></h3>
+    </div>
+
+    <a href="{{ url_for('dashboard') }}"><button>Go Back</button></a>
+{% endblock %}

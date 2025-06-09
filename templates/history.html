@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Upload History{% endblock %}
+
+{% block content %}
+    <h2>Your Upload History</h2>
+
+    {% if history %}
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Prediction</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for entry in history %}
+        <tr>
+            <td>
+                <img src="{{ url_for('static', filename='uploads/' + entry[0]) }}" alt="Uploaded Image" width="100">
+            </td>
+            <td>{{ entry[1] }}</td>
+            <td>{{ entry[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <!-- Download PDF Button -->
+    <a href="{{ url_for('download_pdf') }}" class="pdf-button">
+        <button>Download PDF</button>
+    </a>
+
+    {% else %}
+        <p>No upload history found.</p>
+    {% endif %}
+{% endblock %}
